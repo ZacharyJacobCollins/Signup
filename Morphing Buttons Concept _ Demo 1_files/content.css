@@ -180,6 +180,7 @@
 	text-align: center;
 	font-weight: 300;
 	font-size: 3.5em;
+	color: #056ab6;
 }
 
 .content-style-form form {
@@ -194,10 +195,10 @@
 .content-style-form label {
 	display: block;
 	padding: 10px 0 0;
-	color: #d5bba4;
+	color: #056ab6;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: bold;
+	font-weight: normal;
 }
 
 .content-style-form input[type="text"],
@@ -227,11 +228,12 @@
 	padding: 1.5em;
 	width: 100%;
 	border: none;
-	background: #e75854;
+	border-radius: .10in;
+	background: #056ab6;
 	color: #f9f6e5;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-weight: 800;
+	font-weight: 500;
 	font-size: 1.25em;
 }
 
