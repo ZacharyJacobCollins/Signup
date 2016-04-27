@@ -10,7 +10,7 @@
 	position: relative;
 	padding: 0 1em;
 	border: none;
-	background-color: #e85657;
+	background-color: #056ab6;
 	color: #f9f6e5;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -26,8 +26,8 @@
 
 .morph-content {
 	pointer-events: none;
-	border-radius: 2%;f
-	color: inherit;
+	border-radius: 2%;
+	color: #056ab6;
 }
 
 .morph-button.open .morph-content {
@@ -111,7 +111,7 @@
 
 .morph-button-overlay .morph-content {
 	overflow: hidden;
-	background: #e85657;
+	background: #056ab6;
 }
 
 .morph-button-overlay.open .morph-content {
@@ -183,7 +183,7 @@
 .morph-button-modal-3 > button,
 .morph-button-modal-3 .morph-content {
 	background-color: #fef0e3;
-	color: #e75854;
+	color: #056ab6;
 }
 
 .morph-button-modal-4 {
@@ -229,10 +229,36 @@
 	height: 420px;
 }
 
+
 .morph-button-modal-3.open .morph-content {
 	margin: -255px 0 0 -210px;
 	width: 420px;
-	height: 510px;
+	overflow-y: visible;
+	height: auto;
+}
+
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(168, 199, 251);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background:	rgb(227, 221, 251);
+    -webkit-box-shadow: inset 0 0 6px rgb(35, 114, 243);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgb(100, 155, 247);
 }
 
 .morph-button-modal-3.open .morph-content > div {
@@ -291,7 +317,7 @@
 
 .morph-button-inflow-1 .morph-content .morph-clone {
 	color: #f9f6e5;
-	background: #e85657;
+	background: #056ab6;
 }
 
 .morph-button-inflow-2 {
@@ -313,7 +339,7 @@
 	width: 100%;
 	height: 100%;
 	background-color: transparent;
-	color: #e75854;
+	color: #056ab6;
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
 }
@@ -352,7 +378,7 @@
 }
 
 .morph-button-sidebar .morph-content {
-	background: #e85657;
+	background: #056ab6;
 }
 
 .morph-button-sidebar.open .morph-content {
@@ -421,7 +447,7 @@
 	left: 0;
 	margin: 0;
 	height: 100%;
-	background: #e85657;
+	background: #056ab6;
 	overflow: auto;
 }
 

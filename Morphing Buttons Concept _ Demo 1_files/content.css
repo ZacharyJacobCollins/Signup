@@ -15,7 +15,7 @@
 	display: block;
 	overflow: hidden;
 	width: 3em;
-	height: 3em;
+	height: 5em;
 	text-align: center;
 	line-height: 3;
 	cursor: pointer;
@@ -214,8 +214,8 @@
 
 .content-style-form input[type="text"]:focus,
 .content-style-form input[type="password"]:focus {
-	border-color: #e75854;
-	color: #e75854;
+	border-color: #056ab6;
+	color: #056ab6;
 }
 
 .content-style-form input:focus {
@@ -245,7 +245,7 @@
 }
 
 .content-style-form .icon-close:hover {
-	color: #e75854;
+	color: #056ab6;
 }
 
 .js .content-style-form-1 h2,
@@ -379,7 +379,7 @@
 }
 
 .morph-button-inflow-2 > button svg path {
-	fill: #e75854;
+	fill: #056ab6;
 }
 
 .content-style-social a {
@@ -402,11 +402,11 @@
 }
 
 .content-style-social a:hover {
-	color: #e75854;
+	color: #056ab6;
 }
 
 .content-style-social a:hover svg path {
-	fill: #e75854;
+	fill: #056ab6;
 }
 
 .content-style-social a svg {
