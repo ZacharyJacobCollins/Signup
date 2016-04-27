@@ -7,11 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Shift</title>
 
-    <link rel="stylesheet" href="./Shift_files/css">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/form-elements.css">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/form-elements.css">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/style.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -26,16 +25,15 @@
 
     <!-- Favicon and touch icons -->
     <link rel="shortcut icon" href="http://zacc.xyz/register_login/ico/favicon.png">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/apple-touch-icon-144-precomposed.png">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/apple-touch-icon-114-precomposed.png">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/apple-touch-icon-72-precomposed.png">
-    <link rel="stylesheet" type="text/css" href="./Shift_files/apple-touch-icon-57-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/apple-touch-icon-144-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/apple-touch-icon-114-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/apple-touch-icon-72-precomposed.png">
+    <link rel="stylesheet" type="text/css" href="./Landing_page_css/apple-touch-icon-57-precomposed.png">
 
-    <link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/normalize.css">
-    <link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/demo.css">
-    <link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/component.css">
-    <link rel="stylesheet" type="text/css" href="./Morphing Buttons Concept _ Demo 1_files/content.css">
-    <script type="text/javascript" async="" src="./Morphing Buttons Concept _ Demo 1_files/ga.js"></script><script src="./Morphing Buttons Concept _ Demo 1_files/modernizr.custom.js"></script>
+    <link rel="stylesheet" type="text/css" href="./Morphing_buttons/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./Morphing_buttons/component.css">
+    <link rel="stylesheet" type="text/css" href="./Morphing_buttons/content.css">
+    <script type="text/javascript" async="" src="./Morphing_buttons/ga.js"></script><script src="./Morphing_buttons/modernizr.custom.js"></script>
 </head>
 
 <body data-gr-c-s-loaded="true">
@@ -75,10 +73,10 @@
                                 <div class="content-style-form content-style-form-1">
                                   <span class="icon icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
                                   <h2>Login</h2>
-                                  <form>
+                                  <form action="{{ url('/login') }}" method="POST">
                                     <p><label>Email</label><input type="text"></p>
                                     <p><label>Password</label><input type="password"></p>
-                                    <p><button>Login</button></p>
+                                    <p><button type="submit">Login</button></p>
                                   </form>
                                 </div>
                               </div>
@@ -91,12 +89,12 @@
                                 <div class="content-style-form content-style-form-2">
                                   <span class="icon icon-close"> </span>
                                   <h2>Sign Up</h2>
-                                  <form>
+                                  <form action="{{ url('/register') }}" method="POST">
                                     <p><label>Email</label><input type="text"></p>
                                     <p><label>A number to text you at!</label><input type="text"></p>
                                     <p><label>Password</label><input type="password"></p>
                                     <p><label>Confirm Password</label><input type="password"></p>
-                                    <p><button>Sign Up</button></p>
+                                    <p><button type="submit">Sign Up</button></p>
                                   </form>
                                 </div>
                               </div>
@@ -113,13 +111,13 @@
         <div class="social-login">
             <h3>...or login with:</h3>
             <div class="social-login-buttons">
-                <a class="btn btn-link-2" href="http://zacc.xyz/login#">
+                <a class="btn btn-link-2" href="{{ url('/auth/facebook') }}">
                     <i class="fa fa-facebook"></i> Facebook
                 </a>
-                <a class="btn btn-link-2" href="http://zacc.xyz/login#">
+                <a class="btn btn-link-2" href="{{ url('/auth/twitter') }}">
                     <i class="fa fa-twitter"></i> Twitter
                 </a>
-                <a class="btn btn-link-2" href="http://zacc.xyz/login#">
+                <a class="btn btn-link-2" href="{{ url('/auth/google') }}">
                     <i class="fa fa-google-plus"></i> Google Plus
                 </a>
             </div>
@@ -144,14 +142,14 @@
 </footer>
 
 <!-- Javascript -->
-<script src="./Shift_files/jquery-1.11.1.min.js"></script>
-<script src="./Shift_files/bootstrap.min.js"></script>
-<script src="./Shift_files/jquery.backstretch.min.js"></script>
-<script src="./Shift_files/scripts.js"></script>
+<script src="./Landing_page_css/jquery-1.11.1.min.js"></script>
+<script src="./Landing_page_css/bootstrap.min.js"></script>
+<script src="./Landing_page_css/jquery.backstretch.min.js"></script>
+<script src="./Landing_page_css/scripts.js"></script>
 
 <!-- Morphing buttons -->
-<script src="./Morphing Buttons Concept _ Demo 1_files/classie.js"></script>
-  <script src="./Morphing Buttons Concept _ Demo 1_files/uiMorphingButton_fixed.js"></script>
+<script src="./Morphing_buttons/classie.js"></script>
+  <script src="./Morphing_buttons/uiMorphingButton_fixed.js"></script>
   <script>
     (function() {
       var docElem = window.document.documentElement, didScroll, scrollPosition;
@@ -222,4 +220,4 @@
 <script src="assets/js/placeholder.js"></script>
 <![endif]-->
 
-<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 1358px; width: 2477px; z-index: -999999; position: fixed;"><img src="./Shift_files/1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 2477px; height: 1651.33px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -146.667px;"></div></body><div></div><div></div></html>
+<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 1358px; width: 2477px; z-index: -999999; position: fixed;"><img src="./Landing_page_css/1.jpg" style="position: absolute; margin: 0px; padding: 0px; border: none; width: 2477px; height: 1651.33px; max-height: none; max-width: none; z-index: -999999; left: 0px; top: -146.667px;"></div></body><div></div><div></div></html>
